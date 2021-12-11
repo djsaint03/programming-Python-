@@ -123,11 +123,7 @@ class Character:
         else:
             return False
 
-
-
-
-
-
+    # conan.attack(deadpool, "sword")
     def attack(self, target, weapon):
         """
         A character (self) attacks the target using a weapon.
@@ -157,7 +153,7 @@ class Character:
                  False, if attack fails for any reason.
         """
 
-        damage_counter = 0
+
         # TODO: the implementation of the method
 
         if self.name == target.name and weapon in WEAPONS:
@@ -188,7 +184,7 @@ class Character:
             if target.point <= 0:
                 print(f"{self.name} successfully defeats {target.name}.")
 
-
+#conan.attack(deadpool, "sword")
 
 WEAPONS = {
     # Weapon          Damage
